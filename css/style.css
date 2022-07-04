@@ -367,6 +367,41 @@ ul {
   fill: var(--color-white);
 }
 
+/* clients */
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .client-item {
+  display: block;
+  width: 170px;
+  height: 92 px;
+  border: 1px solid var(--color-fill);
+  border-radius: 4px;
+} */
+
+.icon-client {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  padding: 16px;
+  fill: var(--color-fill);
+
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 6);
+  border: 1px solid var(--color-fill);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon-client:hover {
+  border-color: var(--color1);
+}
+
 /* footer */
 .text-logo-white {
   color: var(--color-white);
@@ -443,7 +478,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 45px) / 3);
+  flex-basis: calc((100% - 30px) / 3);
 }
 
 .portfolio-title {
