@@ -203,17 +203,22 @@ ul {
   max-width: 270px;
 }
 
-.wrap {
+/* .wrap {
   background-color: var(--color-btn);
   border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
   width: 270px;
-}
+} */
 
 .icon-about {
-  outline: 1px solid tomato;
-  height: 70px;
+  background-color: var(--color-btn);
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: inherit;
+  height: 130px;
+  margin-bottom: 30px;
 }
 /* .about-item:nth-child(1)::before {
   background-image: url(../images/antenna\ 1.svg);
