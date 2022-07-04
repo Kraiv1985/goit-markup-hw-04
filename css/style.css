@@ -6,6 +6,7 @@
   --color-black: #000000;
   --color-white: #fff;
   --color-btn: #f5f4fa;
+  --color-fill: #afb1b8;
 
   --font-family-primary: "Roboto", sans-serif;
   --font-family-logo: "Raleway", sans-serif;
@@ -202,32 +203,33 @@ ul {
   max-width: 270px;
 }
 
-.about-item::before {
-  display: block;
-  content: "";
-  margin-bottom: 30px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
+.wrap {
   background-color: var(--color-btn);
   border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+  width: 270px;
 }
 
-.about-item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.png);
+.icon-about {
+  outline: 1px solid tomato;
+  height: 70px;
+}
+/* .about-item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.svg);
 }
 
 .about-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.png);
+  background-image: url(../images/clock\ 1.svg);
 }
 
 .about-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.png);
+  background-image: url(../images/diagram\ 1.svg);
 }
 
 .about-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.png);
-}
+  background-image: url(../images/astronaut\ 1.svg);
+} */
 
 .title-two {
   margin-bottom: 50px;
@@ -301,11 +303,41 @@ ul {
 }
 
 .contact-text {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   color: var(--color-text);
   font-weight: 400;
   line-height: 1.18;
+}
+
+.actions {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  max-width: 206px;
+  margin-bottom: 30px;
+}
+
+.actions a {
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.actions a:hover {
+  background-color: var(--color1);
+}
+
+.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--color-fill);
+}
+
+.icon:hover {
+  fill: var(--color-white);
 }
 
 /* footer */
