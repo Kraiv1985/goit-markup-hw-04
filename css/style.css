@@ -116,7 +116,9 @@ ul {
 .mail-phone {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
+
 .mail-phone-item + .mail-phone-item {
   margin-left: 50px;
 }
@@ -126,6 +128,25 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: var(--color-text);
+}
+
+.icon-phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: var(--color-text);
+}
+
+.icon-phone:hover,
+.icon-mail:hover {
+  fill: var(--color1);
 }
 
 .menu-link:hover,
@@ -220,6 +241,7 @@ ul {
   height: 130px;
   margin-bottom: 30px;
 }
+
 /* .about-item:nth-child(1)::before {
   background-image: url(../images/antenna\ 1.svg);
 }
