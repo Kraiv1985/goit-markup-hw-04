@@ -199,7 +199,34 @@ ul {
 }
 
 .about-item {
-  max-width: 260px;
+  max-width: 270px;
+}
+
+.about-item::before {
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-btn);
+  border-radius: 4px;
+}
+
+.about-item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.png);
+}
+
+.about-item:nth-child(2)::before {
+  background-image: url(../images/clock\ 1.png);
+}
+
+.about-item:nth-child(3)::before {
+  background-image: url(../images/diagram\ 1.png);
+}
+
+.about-item:nth-child(4)::before {
+  background-image: url(../images/astronaut\ 1.png);
 }
 
 .title-two {
