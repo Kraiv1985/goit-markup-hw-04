@@ -369,9 +369,9 @@ ul {
 
 /* clients */
 
-/* .clients {
-  margin-top: 0;
-} */
+.clients {
+  background-color: var(--color-bg2);
+}
 
 .client {
   display: flex;
