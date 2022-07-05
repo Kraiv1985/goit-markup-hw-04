@@ -428,14 +428,15 @@ ul {
   justify-content: space-between;
 }
 
-.conect-item a {
+.conect-link {
   display: block;
   padding: 10px;
   border-radius: 50%;
   background-color: var(--color-text);
+  align-items: center;
 }
 
-.conect-item a:hover {
+.conect-link:hover {
   background-color: var(--color1);
 }
 
