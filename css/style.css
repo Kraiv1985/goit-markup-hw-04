@@ -3,10 +3,12 @@
   --color-bg: #2f303a;
   --color-bg2: #fff;
   --color-text: #757575;
+  --color-text2: #212121;
   --color-black: #000000;
   --color-white: #fff;
   --color-btn: #f5f4fa;
   --color-fill: #afb1b8;
+  --color-fill-bg: rgba(255, 255, 255, 0.1);
 
   --font-family-primary: "Roboto", sans-serif;
   --font-family-logo: "Raleway", sans-serif;
@@ -126,6 +128,7 @@ ul {
 .mail-phone-link {
   display: flex;
   align-items: center;
+  padding: 10px 0;
   color: var(--color-text);
   font-weight: 500;
   line-height: 1.14;
@@ -133,19 +136,17 @@ ul {
 }
 
 .icon-mail {
-  width: 16px;
   margin-right: 10px;
   fill: var(--color-text);
 }
 
 .icon-phone {
-  width: 10px;
   margin-right: 10px;
   fill: var(--color-text);
 }
 
-.icon-phone:hover,
-.icon-mail:hover {
+.mail-phone-link:hover .icon-phone,
+.mail-phone-link:hover .icon-mail {
   fill: var(--color1);
 }
 
@@ -224,40 +225,6 @@ ul {
   max-width: 270px;
 }
 
-/* .wrap {
-  background-color: var(--color-btn);
-  border-radius: 4px;
-  margin-bottom: 30px;
-  height: 120px;
-  width: 270px;
-} */
-
-.icon-about {
-  background-color: var(--color-btn);
-  border-radius: 4px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  max-width: inherit;
-  height: 130px;
-  margin-bottom: 30px;
-}
-
-/* .about-item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.about-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.about-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.about-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.svg);
-} */
-
 .title-two {
   margin-bottom: 50px;
   font-size: 36px;
@@ -278,6 +245,16 @@ ul {
   color: var(--color-text);
   font-weight: 400;
   line-height: 1.71;
+}
+
+.box-icon {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-btn);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 /* work */
@@ -337,33 +314,38 @@ ul {
   line-height: 1.18;
 }
 
-.actions {
+.connection {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 206px;
   margin-bottom: 30px;
 }
 
-.actions a {
-  display: block;
-  padding: 10px;
-  border-radius: 50%;
+.connection-item {
+  width: 44px;
+  height: 44px;
 }
 
-.actions a:hover {
+.connection-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.connection-link:hover {
   background-color: var(--color1);
 }
 
 .icon {
-  display: block;
-  width: 20px;
-  height: 20px;
   fill: var(--color-fill);
 }
 
-.icon:hover {
+.connection-link:hover .icon{
   fill: var(--color-white);
 }
 
@@ -375,27 +357,33 @@ ul {
 
 .client {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-.icon-client {
-  display: inline-flex;
+.client-item {
   width: 170px;
   height: 92px;
-  padding: 16px;
-  fill: var(--color-fill);
-
-  flex-wrap: wrap;
-  gap: 30px;
-  flex-basis: calc((100% - 30px) / 6);
   border: 1px solid var(--color-fill);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
 }
 
-.icon-client:hover {
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-client {
+  fill: var(--color-fill);
+}
+
+.client-link:hover .icon-client {
+  fill: var(--color1);
+}
+
+.client-item:hover {
   border-color: var(--color1);
 }
 
@@ -403,10 +391,10 @@ ul {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-title {
-  margin-top: 15px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -421,12 +409,19 @@ ul {
   justify-content: space-between;
 }
 
+.conect-item {
+  width: 44px;
+  height: 44px;
+}
+
 .conect-link {
-  display: block;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: var(--color-text);
+  display: flex;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-fill-bg);
 }
 
 .conect-link:hover {
@@ -474,6 +469,9 @@ ul {
 .adress li:first-child a {
   color: var(--color-white);
 }
+
+
+/* 2 титул */
 
 .buttons {
   display: flex;
@@ -529,6 +527,7 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--color-text2);
 }
 
 .portfolio-text {
@@ -547,4 +546,13 @@ ul {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
